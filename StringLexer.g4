@@ -23,6 +23,7 @@ PLUS: '+';
 MINUS: '-';
 MUL: '*';
 DIV: '/';
+STRING: 'String';
 LEFTBRACET: '(';
 RIGHTBRACET: ')';
 LEFTBRACE: '{';
