@@ -1,16 +1,16 @@
-import generated.StringLexer.StringLexer;
+import generated.IPV4.IPV4Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
 
-public class Main{
-    public static void main(java.lang.String[] args) throws java.io.IOException {
+public class IPV4 {
+    public static void main(String[] args) {
         CharStream charStream =
-                CharStreams.fromFileName("testcases/string.txt");
+                CharStreams.fromString("257.016.299.233");
 
-        StringLexer lexer =
-                new StringLexer(charStream);
+        IPV4Lexer lexer =
+                new IPV4Lexer(charStream);
 
         CommonTokenStream tokens =
                 new CommonTokenStream(lexer);
@@ -18,12 +18,12 @@ public class Main{
         tokens.fill();
 
         for (Token token : tokens.getTokens()) {
-            // Do not output EOF
+            // 不输出 EOF
             if (token.getType() == Token.EOF) {
                 continue;
             }
 
-            java.lang.String tokenType =
+            String tokenType =
                     lexer.getVocabulary()
                             .getSymbolicName(token.getType());
 
@@ -33,16 +33,5 @@ public class Main{
                     token.getText()
             );
         }
-
-        int whitespaceCount = 0;
-
-        for (Token token : tokens.getTokens()) {
-            if (token.getChannel() == StringLexer.WHITESPACE) {
-                whitespaceCount += token.getText().length();
-            }
-        }
-        
-        System.out.println("Whitespace count: " + whitespaceCount);
     }
-
 }

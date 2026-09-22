@@ -1,0 +1,7 @@
+int main() {
+    int x = 42;
+    String s = "Hello \"World\"!";
+    if (x > 10) {
+        x = x + 1;
+    }
+}

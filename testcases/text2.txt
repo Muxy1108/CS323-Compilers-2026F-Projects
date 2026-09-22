@@ -1,0 +1,6 @@
+String a = "abc" "cde";
+String b = "abc" 123;
+String c = "hello world";
+String d = "hello\"world";
+String e = "hello"world";
+String f = "hello world\";
