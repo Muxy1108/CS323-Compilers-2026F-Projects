@@ -1,0 +1,3 @@
+(program (globalDef (functionDef (type int) main ( ) (block { (statement (localVarDef (variableDecl (type int) a) = (expression (expression 1) + (expression (expression 2) * (expression 3))) ;)) (statement (localVarDef (variableDecl (type int) b) = (expression (expression ( (expression (expression 10) - (expression 4)) )) / (expression 2)) ;)) (statement (returnStatement return (expression a) ;)) }))) <EOF>)
+Expression: `1+2*3` evaluates to 7
+Expression: `(10-4)/2` evaluates to 3

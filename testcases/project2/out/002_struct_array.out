@@ -1,0 +1,1 @@
+(program (globalDef (structDef struct Point { (fieldDef (variableDecl (type int) x) ;) (fieldDef (variableDecl (type int) y (arrayDimension [ 4 ])) ;) } ;)) <EOF>)

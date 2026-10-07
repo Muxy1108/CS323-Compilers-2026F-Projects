@@ -1,0 +1,1 @@
+(program (globalDef (globalVarDef (variableDecl (type int) a) ;)) <EOF>)
