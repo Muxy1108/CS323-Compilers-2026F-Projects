@@ -1,0 +1,9 @@
+int integer int_value struct structure return returning if if2 else while while_
+= == + - * / % ^ < <= > >= != && || ! .
+;,(){}[]
+0 9 10 123 01234 000 123abc 123_awe
+a/* one */b/* two */c
+/* outer
+   /* inner */ + 2
+ret/**/urn
+int x; // comment without final newline
